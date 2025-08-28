@@ -14,3 +14,16 @@ for (let btn of loveBtn) {
     loveElement.innerText = loveCount;
   });
 }
+
+// call btn style
+const callBtn = document.getElementsByClassName("call_btn");
+
+for (let btn of callBtn) {
+  btn.addEventListener("click", function () {
+    const titel = btn.parentNode.parentNode.children[1].innerText;
+    const callNumber = btn.parentNode.parentNode.children[3].innerText;
+    alert("Calling" + " " + titel);
+
+    console.log(callNumber);
+  });
+}
