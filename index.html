@@ -30,7 +30,7 @@
         </div>
         <div class="px-5">
           <button class="w-23 mx-2 bg-[#bbecc5] p-2 rounded-3xl">
-            <span>0</span> ❤️
+            <span id="love_count">0</span> ❤️
           </button>
           <button class="w-23 mx-2 p-2 rounded-3xl bg-[#bbecc5]">
             100 <img class="inline" src="assets/fi_11280638.png" alt="" />
@@ -56,7 +56,7 @@
     </header>
     <!-- main section style  -->
     <main>
-      <section class="bg-[#bbecc5]">
+      <section class="bg-[#d7eedc]">
         <div class="w-11/12 mx-auto grid grid-cols-12 gap-8  ">
         <!-- service section style  -->
         <div class=" col-span-9 mt-10 ">
@@ -69,7 +69,7 @@
            <div class="bg-[#FFE3E2] w-[50px] h-[50px] rounded-xl ">
               <img class="w-[30px]  ml-2 mt-2" src="assets/emergency.png" alt="">
            </div>
-             <i class="fa-regular fa-heart"></i>
+             <i class="fa-regular fa-heart love_btn"></i>
            </div>
             <h3 class=" font-bold text-[20px] mt-5">National Emergency Number</h3>
             <p class="text-gray-600">National Emergency</p>
@@ -87,7 +87,7 @@
              <div class="bg-[#DFEFFF] rounded-xl w-[50px] h-[50px]">
               <img class="w-[30px] mt-2 ml-2"  src="assets/police.png" alt="">
              </div>
-             <i class="fa-regular fa-heart"></i>
+             <i class="fa-regular fa-heart love_btn"></i>
            </div>
             <h3 class=" font-bold text-[20px] mt-5">Police Helpline Number</h3>
             <p class="text-gray-600">Police</p>
@@ -105,7 +105,7 @@
              <div class="bg-[#FFE3E2] rounded-xl w-[50px] h-[50px]">
               <img class="w-[30px] mt-2 ml-2" src="assets/fire-service.png" alt="">
              </div>
-             <i class="fa-regular fa-heart"></i>
+             <i class="fa-regular fa-heart love_btn"></i>
            </div>
             <h3 class=" font-bold text-[20px] mt-5">Fire Service Number</h3>
             <p class="text-gray-600">Fire Service</p>
@@ -124,7 +124,7 @@
              <div class="bg-[#FFE3E2] rounded-xl w-[50px] h-[50px]">
               <img class="w-[30px] mt-2 ml-2" src="assets/ambulance.png" alt="">
              </div>
-             <i class="fa-regular fa-heart"></i>
+             <i class="fa-regular fa-heart love_btn"></i>
            </div>
             <h3 class=" font-bold text-[20px] mt-5">Ambulance Service</h3>
             <p class="text-gray-600">Ambulance</p>
@@ -142,7 +142,7 @@
              <div class="bg-[#FFE3E2] rounded-xl w-[50px] h-[50px]">
               <img class="w-[30px] mt-2 ml-2" src="assets/emergency.png" alt="">
              </div>
-             <i class="fa-regular fa-heart"></i>
+             <i class="fa-regular fa-heart love_btn"></i>
            </div>
             <h3 class=" font-bold text-[20px] mt-5">Women & Child Helpline</h3>
             <p class="text-gray-600">Women & Child Helpline</p>
@@ -160,7 +160,7 @@
              <div class="bg-[#FFE3E2] rounded-xl w-[50px] h-[50px]">
               <img class="w-[30px] mt-2 ml-2" src="assets/emergency.png" alt="">
              </div>
-             <i class="fa-regular fa-heart"></i>
+             <i class="fa-regular fa-heart love_btn"></i>
            </div>
             <h3 class=" font-bold text-[20px] mt-5">Anti-Corruption Helpline</h3>
             <p class="text-gray-600">Anti-Corruption</p>
@@ -178,7 +178,7 @@
              <div class="bg-[#FFE3E2] rounded-xl w-[50px] h-[50px]">
               <img class="w-[30px] mt-2 ml-2" src="assets/emergency.png" alt="">
              </div>
-             <i class="fa-regular fa-heart"></i>
+             <i class="fa-regular fa-heart love_btn"></i>
            </div>
             <h3 class=" font-bold text-[20px] mt-5">Electricity Helpline</h3>
             <p class="text-gray-600">Electricity Outage</p>
@@ -196,7 +196,7 @@
              <div class="bg-[#FFE3E2] rounded-xl w-[50px] h-[50px]">
               <img class="w-[30px] mt-2 ml-2" src="assets/brac.png" alt="">
              </div>
-             <i class="fa-regular fa-heart"></i>
+             <i class="fa-regular fa-heart love_btn"></i>
            </div>
             <h3 class=" font-bold text-[20px] mt-5">Brac Helpline</h3>
             <p class="text-gray-600">Brac</p>
@@ -214,7 +214,7 @@
              <div class="bg-[#FFE3E2] rounded-xl w-[50px] h-[50px]">
               <img class="w-[30px] mt-2 ml-2" src="assets/Bangladesh-Railway.png" alt="">
              </div>
-             <i class="fa-regular fa-heart"></i>
+             <i class="fa-regular fa-heart love_btn"></i>
            </div>
             <h3 class=" font-bold text-[20px] mt-5">Bangladesh Railway Helpline </h3>
             <p class="text-gray-600">Bangladesh Railway</p>
@@ -231,11 +231,15 @@
            
         </div>
         <!-- call histroy section style  -->
-        <div class="bg-green-500 col-span-3">
-          <p>dfhh</p>
+        <div class="bg-white col-span-3 mt-10">
+         <div class="flex justify-between px-5 mt-5 items-center">
+          <p class="font-semibold "><i class="fa-regular fa-clock mr-2 "></i>Call History</p>
+          <button class="bg-[#00A63E] w-[80px] p-2 rounded-2xl" >Clear</button>
+         </div>
       </section>
         </div>
       </div>
     </main>
+    <script src="scprit/index.js"></script>
   </body>
 </html>
